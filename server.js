@@ -25,9 +25,9 @@ mongoose
 
 // routes middleware
 // readdirSync("./routes").map(r => app.use("/api/v1", require(`./routes/${r}`)))
+readdirSync("./routes").map(r => app.use("/api/v1", require(`./routes/${r}`)))
 
 //Server
-
 const port = process.env.port || 8000
 
 app.listen(port, () => {
